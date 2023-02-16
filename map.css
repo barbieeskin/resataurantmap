@@ -1,0 +1,70 @@
+body{
+	margin:0;
+}
+#map{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+}
+
+.map_photo{
+	height: 100%;
+	width: 100%;
+}
+.pointer{
+	height: 4.6%;
+	position: fixed;
+}
+#point1{
+	
+	top: 37%;
+	left: 35%;
+}
+
+#point2{
+	top: 49%;
+	left: 63%;
+
+}
+
+#point3{
+	top: 46%;
+	left: 55%;
+}
+
+#point4{
+	top: 33.5%;
+	left: 49%;
+}
+
+#point5{
+	top: 53%;
+	left: 57%;
+}
+
+#above_all{
+	width: 100%;
+	height: 100%;
+	
+	position:fixed;
+	top:0;
+	left:0;
+
+	background: rgba(0, 0, 0, 0.7);
+	
+	display:none;
+	
+	opacity:0;
+}
+#big{
+	max-width: 90%;
+	max-height: 90%;
+	
+	cursor:pointer;
+	
+	position:fixed;
+	
+	top: 50%;  
+	left: 50%;
+	transform: translate(-50%, -50%); 
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<link rel="stylesheet" href="/map.css" type="text/css">
+
+<title>map</title>
+
+</head>
+
+<body>
+	<div id="map"> 
+		<img src="photo/map.png" alt="" class="map_photo">
+		<img src="photo/point.png" alt="" id="point1" class="pointer" onClick = "appear('lit.jpg')">
+		<img src="photo/point.png" alt="" id="point2" class="pointer" onClick = "appear('eliseev.jpg')">
+		<img src="photo/point.png" alt="" id="point3" class="pointer" onClick = "appear('qr.point3.jpg')">
+		<img src="photo/point.png" alt="" id="point4" class="pointer" onClick = "appear('podval.jpg')">
+		<img src="photo/point.png" alt="" id="point5" class="pointer" onClick = "appear('metropol.jpg')">
+	</div>
+	<div id="above_all">
+		<img id="big" src=""	onClick = "disappear()">
+	</div>
+	
+	<script>
+		var opacity_val = 0.0;
+		setInterval (obj_opacity,5);
+		function obj_opacity(){
+			if(document.getElementById('above_all').style.display == "block"){
+				if(document.getElementById('above_all').style.opacity < 1){
+					opacity_val += 0.01;
+					document.getElementById('above_all').style.opacity = opacity_val;
+				}
+			}
+		}
+		function appear(variable_image){
+			document.getElementById('above_all').style.display = "block";
+			document.getElementById('big').src = variable_image;
+		}
+		function disappear(){
+			document.getElementById('above_all').style.display = "none";
+			opacity_val = 0.0;
+			document.getElementById('above_all').style.opacity = opacity_val;
+		}
+		
+	</script>
+</body>
+
+</html>
