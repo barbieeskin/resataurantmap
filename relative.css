@@ -1,7 +1,6 @@
 @media not (aspect-ratio: 16/9){
 	#map {
 		position: relative;
-		width: fit-content;
 		height: 100vh;
 		overflow-y: hidden;
 		}
