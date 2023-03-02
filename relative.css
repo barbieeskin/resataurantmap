@@ -1,0 +1,17 @@
+@media not (aspect-ratio: 16/9){
+	#map {
+		position: relative;
+		width: fit-content;
+		height: 100vh;
+		overflow-y: hidden;
+		}
+	.map_photo{
+		width: auto;
+	}
+	.pointer{
+		height: 4.6%;
+		position: absolute;
+	}
+	
+	
+}
